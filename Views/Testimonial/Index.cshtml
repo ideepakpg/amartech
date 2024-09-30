@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <h2 class="m-0 text-primary">Amartech</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a asp-controller="Home" asp-action="Index" class="nav-item nav-link">Home</a>
+                <a asp-controller="About" asp-action="Index" class="nav-item nav-link">About</a>
+                <a asp-controller="Service" asp-action="Index" class="nav-item nav-link">Service</a>
+                <a asp-controller="Project" asp-action="Index" class="nav-item nav-link">Project</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a asp-controller="Feature" asp-action="Index" class="dropdown-item">Feature</a>
+                        <a asp-controller="RequestPricing" asp-action="Index" class="dropdown-item">Request Pricing</a>
+                        <a asp-controller="Ourteam" asp-action="Index" class="dropdown-item">Our Team</a>
+                        <a asp-controller="Testimonial" asp-action="Index" class="dropdown-item active">Testimonial</a>
+                    </div>
+                </div>
+                <a asp-controller="Contact" asp-action="Index" class="nav-item nav-link">Contact Us</a>
+            </div>
+            <a asp-controller="RequestPricing" asp-action="Index" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                Request Pricing<i class="fa fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Testimonial</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Testimonial</h6>
+                <h1 class="mb-4">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>"The solar panel installation was seamless, and the team was very professional. I’m saving so much on my energy bills!"</p>
+                        <h5 class="mb-1">Ghanashyam P G</h5>
+                        <span class="fst-italic">Automobile Technician</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>"Great service and support throughout the process. The team helped me choose the right inverter for my needs"</p>
+                        <h5 class="mb-1">John Doe</h5>
+                        <span class="fst-italic">Doctor</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>"I had an excellent experience with Amartech Power Solutions. Their expertise in solar systems is unmatched!"</p>
+                        <h5 class="mb-1">David Jacob</h5>
+                        <span class="fst-italic">Lawyer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+</body>
+
+</html>

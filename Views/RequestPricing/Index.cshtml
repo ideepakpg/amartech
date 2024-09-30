@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <h2 class="m-0 text-primary">Amartech</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a asp-controller="Home" asp-action="Index" class="nav-item nav-link">Home</a>
+                <a asp-controller="About" asp-action="Index" class="nav-item nav-link">About</a>
+                <a asp-controller="Service" asp-action="Index" class="nav-item nav-link">Service</a>
+                <a asp-controller="Project" asp-action="Index" class="nav-item nav-link">Project</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a asp-controller="Feature" asp-action="Index" class="dropdown-item">Feature</a>
+                        <a asp-controller="RequestPricing" asp-action="Index" class="dropdown-item active">Request Pricing</a>
+                        <a asp-controller="Ourteam" asp-action="Index" class="dropdown-item">Our Team</a>
+                        <a asp-controller="Testimonial" asp-action="Index" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a asp-controller="Contact" asp-action="Index" class="nav-item nav-link">Contact Us</a>
+            </div>
+            <a asp-controller="RequestPricing" asp-action="Index" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                Request Pricing<i class="fa fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Request Pricing</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Request Pricing</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Quote Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container quote px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <h6 class="text-primary">Request Pricing</h6>
+                        <h1 class="mb-4">Get Pricing Details</h1>
+                        <p class="mb-4 pb-2">Ready to harness the power of solar energy? Fill out the form below to get detailed pricing tailored to your needs. Whether it's solar panels, inverters, or water heaters, we're here to help you every step of the way!</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Select a service</option>
+                                        <option value="1">Solar Panels</option>
+                                        <option value="2">Inverters</option>
+                                        <option value="3">Solar Water Heaters</option>
+                                        <option value="4">Batteries</option>
+                                        <option value="5">UPS Systems</option>
+                                        <option value="6">Battery Water</option>
+                                        <option value="7">Solar Light</option>
+                                        <option value="8">Solar Motor Pumps</option>
+                                        <option value="9">Others</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+</body>
+</html>
