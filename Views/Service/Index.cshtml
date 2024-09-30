@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <h2 class="m-0 text-primary">Amartech</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a asp-controller="Home" asp-action="Index" class="nav-item nav-link">Home</a>
+                <a asp-controller="About" asp-action="Index" class="nav-item nav-link">About</a>
+                <a asp-controller="Service" asp-action="Index" class="nav-item nav-link active">Service</a>
+                <a asp-controller="Project" asp-action="Index" class="nav-item nav-link">Project</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a asp-controller="Feature" asp-action="Index" class="dropdown-item">Feature</a>
+                        <a asp-controller="RequestPricing" asp-action="Index" class="dropdown-item">Request Pricing</a>
+                        <a asp-controller="Ourteam" asp-action="Index" class="dropdown-item">Our Team</a>
+                        <a asp-controller="Testimonial" asp-action="Index" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a asp-controller="Contact" asp-action="Index" class="nav-item nav-link">Contact Us</a>
+            </div>
+            <a asp-controller="RequestPricing" asp-action="Index" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                Request Pricing<i class="fa fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Our Services</h6>
+                <h1 class="mb-4">We Are Pioneers In The World Of Renewable Energy</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid mx-auto d-block" src="img/Solar-Panels-bg.jpg" alt="" style="width: 300px; height: 300px;">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-solar-panel fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Solar Panels</h4>
+                            <p>High-efficiency solar panels designed to harness maximum solar energy for your needs</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid mx-auto d-block" src="img/nextget-1250.png" alt="" style="width: 300px; height: 300px;">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-wind fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Inverters</h4>
+                            <p>Reliable inverters to ensure uninterrupted power supply from your solar systems</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid mx-auto d-block" src="img/vt-250-sm.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Batteries</h4>
+                            <p>Advanced battery solutions for storing energy efficiently and powering your devices</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid mx-auto d-block" src="img/win-hot-200-plus-sm.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-solar-panel fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Solar Water Heaters</h4>
+                            <p>Eco-friendly solar water heating systems to reduce energy costs and environmental impact</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid mx-auto d-block" src="img/gf2ruDT3-400-400.webp" alt="" style="width: 300px; height: 300px;">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-wind fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Solar Lights</h4>
+                            <p>Efficient solar lights for outdoor and indoor use, providing sustainable lighting solutions</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid mx-auto d-block" src="img/premium-series-sm.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Solar Motor Pumps</h4>
+                            <p>Solar motor pumps for agricultural and domestic water needs, ensuring sustainability</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <h6 class="text-primary">Why Choose Us!</h6>
+                        <h1 class="mb-4">Complete Solar Solutions for Your Home and Business</h1>
+                        <p class="mb-4 pb-2">With over 25 years of experience, we offer high-quality solar products and services tailored to your needs. From solar panels and batteries to inverters and solar water heaters, we ensure efficient energy solutions for every customer</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Quality</p>
+                                        <h5 class="mb-0">Services</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-user-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Expert</p>
+                                        <h5 class="mb-0">Workers</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-drafting-compass text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Free</p>
+                                        <h5 class="mb-0">Consultation</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-headphones text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Dedicated</p>
+                                        <h5 class="mb-0">Customer Support</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Testimonial</h6>
+                <h1 class="mb-4">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>"The solar panel installation was seamless, and the team was very professional. I’m saving so much on my energy bills!"</p>
+                        <h5 class="mb-1">Ghanashyam P G</h5>
+                        <span class="fst-italic">Automobile Technician</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>"Great service and support throughout the process. The team helped me choose the right inverter for my needs"</p>
+                        <h5 class="mb-1">John Doe</h5>
+                        <span class="fst-italic">Doctor</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>"I had an excellent experience with Amartech Power Solutions. Their expertise in solar systems is unmatched!"</p>
+                        <h5 class="mb-1">David Jacob</h5>
+                        <span class="fst-italic">Lawyer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+</body>
+</html>
