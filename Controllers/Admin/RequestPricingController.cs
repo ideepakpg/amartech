@@ -1,14 +1,14 @@
-﻿using amartech.Repositories;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using amartech.Repositories;
 using amartech.Models.Admin;
 
 namespace amartech.Controllers.Admin
 {
-    public class HomeController : Controller
+    public class RequestPricingController : Controller
     {
         private readonly RequestPricingRepository _repository;
 
-        public HomeController(RequestPricingRepository repository)
+        public RequestPricingController(RequestPricingRepository repository)
         {
             _repository = repository;
         }
@@ -20,7 +20,7 @@ namespace amartech.Controllers.Admin
         }
 
         [HttpPost]
-        public async Task<IActionResult> SubmitPricingRequest([FromBody] PricingRequest request)
+        public async Task<IActionResult> SubmitRequestPricing([FromBody] PricingRequest request)
         {
             request.CreatedBy = request.Name;
             await _repository.InsertPricingRequestAsync(request);
