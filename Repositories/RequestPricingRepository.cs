@@ -7,9 +7,9 @@ namespace amartech.Repositories
 {
     public class RequestPricingRepository
     {
-        private readonly AmartechDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public RequestPricingRepository(AmartechDbContext context)
+        public RequestPricingRepository(ApplicationDbContext context)
         {
             _context = context;
         }
