@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using amartech.Models.Admin;
 
 namespace amartech.Data
 {
@@ -9,5 +10,8 @@ namespace amartech.Data
             : base(options)
         {
         }
+
+        public DbSet<PricingRequest> pricingRequests { get; set; }
+        public DbSet<ContactUs> contactUs { get; set; }
     }
 }
