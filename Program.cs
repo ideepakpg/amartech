@@ -1,5 +1,6 @@
 using amartech.Data;
 using amartech.Repositories;
+using amartech.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +15,19 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+var accountSid = builder.Configuration["Twilio:AccountSid"];
+var authToken = builder.Configuration["Twilio:AuthToken"];
+var fromWhatsAppNumber = builder.Configuration["Twilio:FromWhatsAppNumber"];
+var toWhatsAppNumber = builder.Configuration["Twilio:ToWhatsAppNumber"];
+
+if (string.IsNullOrEmpty(accountSid) || string.IsNullOrEmpty(authToken) || string.IsNullOrEmpty(fromWhatsAppNumber) || string.IsNullOrEmpty(toWhatsAppNumber))
+{
+    throw new InvalidOperationException("Twilio configuration values are not set correctly.");
+}
+
+builder.Services.AddScoped<WhatsAppService>(provider =>
+    new WhatsAppService(accountSid, authToken, fromWhatsAppNumber, toWhatsAppNumber));
 
 builder.Services.AddScoped<RequestPricingRepository>();
 builder.Services.AddScoped<ContactUsRepository>();
