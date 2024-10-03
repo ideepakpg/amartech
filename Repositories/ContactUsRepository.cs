@@ -19,13 +19,13 @@ namespace amartech.Repositories
             var parameters = new[]
             {
                 new SqlParameter("@Name", contact.Name),
-                new SqlParameter("@Email", contact.Email),
+                new SqlParameter("@Mobile", contact.Mobile),
                 new SqlParameter("@Subject", contact.Subject),
                 new SqlParameter("@Message", contact.Message),
                 new SqlParameter("@CreatedBy", contact.CreatedBy),
             };
 
-            await _context.Database.ExecuteSqlRawAsync("EXEC usp_InsertContactUs @Name, @Email, @Subject, @Message, @CreatedBy", parameters);
+            await _context.Database.ExecuteSqlRawAsync("EXEC usp_InsertContactUs @Name, @Mobile, @Subject, @Message, @CreatedBy", parameters);
         }
     }
 }
