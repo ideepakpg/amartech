@@ -2,13 +2,13 @@
     debugger
     const requestData = {
         Name: document.getElementById('name').value,
-        Email: document.getElementById('email').value,
+        Mobile: document.getElementById('mobile').value,
         Subject: document.getElementById('subject').value,
         Message: document.getElementById('message').value,
     };
 
-    const { Name, Email, Subject, Message } = requestData;
-    if (!Name || !Email || !Subject || !Message) {
+    const { Name, Mobile, Subject, Message } = requestData;
+    if (!Name || !Mobile || !Subject || !Message) {
         alert('Please fill in all fields before submitting');
         return;
     }
@@ -18,8 +18,8 @@
         return;
     }
 
-    if (!/^\S+@\S+\.\S+$/.test(Email)) {
-        alert('Please enter a valid email address');
+    if (!/^\d{10,15}$/.test(Mobile)) {
+        alert('Please enter a valid mobile number');
         return;
     }
 
@@ -35,7 +35,7 @@
         if (response.ok) {
             alert('Your message has been sent successfully!');
             document.getElementById('name').value = '';
-            document.getElementById('email').value = '';
+            document.getElementById('mobile').value = '';
             document.getElementById('subject').value = '';
             document.getElementById('message').value = '';
         } else {
